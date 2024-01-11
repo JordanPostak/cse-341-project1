@@ -2,7 +2,15 @@
 
 const router = require('express').Router();
 
-router.get('/', (req, res) => {res.send('Hello World! This is the data on the home page!');});
+// Redirect from '/' to '/home'
+router.get('/', (req, res) => {
+    res.redirect('/home');
+  });
+  
+  // Handle the '/home' route
+  router.get('/home', (req, res) => {
+    res.send('Hello World! This is the data on the home page!');
+  });
 
 router.use('/contacts', require('./contacts'));
 
