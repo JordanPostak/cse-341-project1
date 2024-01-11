@@ -2,7 +2,7 @@
 
 const router = require('express').Router();
 
-router.get('/', (req, res) => {res.send('Hello World');});
+router.get('/', (req, res) => {res.send('Hello World! This is the data on the home page!');});
 
 router.use('/contacts', require('./contacts'));
 
