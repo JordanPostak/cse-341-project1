@@ -1,0 +1,35 @@
+### main
+GET http://localhost:3000
+
+### GET All
+GET http://localhost:3000/contacts
+
+### GET Single
+GET http://localhost:3000/contacts/659ecb0f98324dd30d6455c0
+
+### Create contact
+POST http://localhost:3000/contacts
+content-type: application/json
+
+{
+    "firstName": "New",
+    "lastName": "Person",
+    "email": "new_person@gmail.com",
+    "favoriteColor": "transparent",
+    "birthday": "December 32"
+}
+
+### Update contact
+PUT http://localhost:3000/contacts/659ecc7b98324dd30d6455c4
+content-type: application/json
+
+{
+    "firstName": "Rosie",
+    "lastName": "Postak",
+    "email": "rpostak@gmail.com",
+    "favoriteColor": "pink",
+    "birthday": "April 16th"
+}
+
+### Delete contact
+DELETE http://localhost:3000/contacts/65a57b032ee251dd4b353433
