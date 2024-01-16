@@ -6,7 +6,7 @@
     "version": "1.0.0",
     "title": "REST API"
   },
-  "host": "https://project1-fuea.onrender.com",
+  "host": "project1-fuea.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
