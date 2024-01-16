@@ -1,14 +1,28 @@
 ### main
 GET http://localhost:3000
+GET https://project1-fuea.onrender.com
 
 ### GET All
 GET http://localhost:3000/contacts
+GET https://project1-fuea.onrender.com/contacts
 
 ### GET Single
 GET http://localhost:3000/contacts/659ecb0f98324dd30d6455c0
+GET https://project1-fuea.onrender.com/contacts/659ecb0f98324dd30d6455c0
 
 ### Create contact
 POST http://localhost:3000/contacts
+content-type: application/json
+
+{
+    "firstName": "New",
+    "lastName": "Person",
+    "email": "new_person@gmail.com",
+    "favoriteColor": "transparent",
+    "birthday": "December 32"
+}
+
+POST https://project1-fuea.onrender.com/contacts
 content-type: application/json
 
 {
@@ -31,5 +45,17 @@ content-type: application/json
     "birthday": "April 16th"
 }
 
+PUT https://project1-fuea.onrender.com/contacts/659ecc7b98324dd30d6455c4
+content-type: application/json
+
+{
+    "firstName": "Rosie",
+    "lastName": "Postak",
+    "email": "rpostak@gmail.com",
+    "favoriteColor": "pink",
+    "birthday": "April 16th"
+}
+
 ### Delete contact
 DELETE http://localhost:3000/contacts/65a57b032ee251dd4b353433
+DELETE https://project1-fuea.onrender.com/contacts/65a57b032ee251dd4b353433
