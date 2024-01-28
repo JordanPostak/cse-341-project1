@@ -1,6 +1,5 @@
 ### main
 GET http://localhost:3000
-GET https://project1-fuea.onrender.com
 
 ### GET All
 GET http://localhost:3000/contacts
